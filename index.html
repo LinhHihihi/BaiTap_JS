@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <table style="margin: auto;">
+
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap/js/bootstrap.min.js">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Js -->
+        <script src="js/jquery-3.6.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Title -->
+        <strong class="">Bài tập (JS) - Nguyễn Mỹ Linh</strong>
+        <!-- Body -->
+        <div class="row d-flex justify-content-center">
+            <h1 id="bai1" class="col-3 btn btn-danger">Bài 1:</h1>
+            <div class="row" style="display: none;" id="show-1">
+                <div style="font-size:25px ; font-weight:bold">
+                    Nhập số ngày: (1 ngày = 100000VND)
+                    <input type="text" class="form-control" id="input-date">
+                </div>
+                <div style="font-size:25px ; font-weight:bold">
+                    Lương: <span id="price">0</span>VND
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <h1 id="bai2" class="col-3 btn btn-danger">Bài 2:</h1>
+            <div class="row" style="display: none;" id="show-2">
+                <div style="font-size:25px ; font-weight:bold">
+                    Nhập 5 số thực:
+                    <div class="row">
+                        <input type="text" class="form-control m-1" id="input-float1">
+                        <input type="text" class="form-control m-1" id="input-float2">
+                        <input type="text" class="form-control m-1" id="input-float3">
+                        <input type="text" class="form-control m-1" id="input-float4">
+                        <input type="text" class="form-control m-1" id="input-float5">
+                    </div>
+                </div>
+                <div style="font-size:25px ; font-weight:bold">
+                    <button class="btn btn-success" id="output-2">Output</button>
+                    =>Trung Bình: <span id="trungbinh">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <h1 id="bai3" class="col-3 btn btn-danger">Bài 3:</h1>
+            <div class="row" style="display: none;" id="show-3">
+                <div style="font-size:25px ; font-weight:bold">
+                    Nhập số USD:
+                    <input type="text" class="form-control" id="input-usd">
+                </div>
+                <div style="font-size:25px ; font-weight:bold">
+                    VND: <span id="output-vnd">0</span>VND
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <h1 id="bai4" class="col-3 btn btn-danger">Bài 4:</h1>
+            <div class="row" style="display: none;" id="show-4">
+                <div style="font-size:25px ; font-weight:bold">
+                    Nhập chiều dài:
+                    <input type="text" class="form-control " id="input-dai">
+                    Nhập chiều rộng:
+                    <input type="text" class="form-control" id="input-rong">
+                </div>
+                <div style="font-size:25px ; font-weight:bold">
+                    Diện tích: <span id="output-dientich">0</span>
+                    Chu vi: <span id="output-chuvi">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <h1 id="bai5" class="col-3 btn btn-danger">Bài 5:</h1>
+            <div class="row" style="display: none;" id="show-5">
+                <div style="font-size:25px ; font-weight:bold">
+                    Nhập số có 2 chữ số:
+                    <input type="text" class="form-control" id="input-number">
+                </div>
+                <div style="font-size:25px ; font-weight:bold">
+                    Tổng 2 ký số: <span id="output-sum">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="index.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#bai1').click(function(){
+                $('#show-1').toggle();
+            });
+            $('#bai2').click(function(){
+                $('#show-2').toggle();
+            });
+            $('#bai3').click(function(){
+                $('#show-3').toggle();
+            });
+            $('#bai4').click(function(){
+                $('#show-4').toggle();
+            });
+            $('#bai5').click(function(){
+                $('#show-5').toggle();
+            });
+        });
+    </script>
+</body>
+
+</html>
